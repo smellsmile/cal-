@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Calci.css">
+    <script src="./Calci.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div id="calci">
+        <input type="text" id="display">
+
+        <div class="row"id="OnOff">
+            <input type="radio" name="turnon" onclick="turnOn()"><label>ON</label>
+            <input type="radio" name="turnon" onclick="turnOff()"><label>OFF</label>
+        </div>
+        <div class="row" id="ce">
+            <button onclick="clearOneChar()">C</button>
+            <button onclick="clearAll()">CE</button>    
+        </div>
+        <div class="row">
+            <button onclick="displayInInput(this)">1</button>
+            <button onclick="displayInInput(this)">2</button>
+            <button onclick="displayInInput(this)">3</button>
+            <button onclick="displayInInput(this)">+</button>
+        </div>
+        <div class="row">
+            <button onclick="displayInInput(this)">4</button>
+            <button onclick="displayInInput(this)">5</button>
+            <button onclick="displayInInput(this)">6</button>
+            <button onclick="displayInInput(this)">-</button>
+        </div>
+        <div class="row">
+            <button onclick="displayInInput(this)">7</button>
+            <button onclick="displayInInput(this)">8</button>
+            <button onclick="displayInInput(this)">9</button>
+            <button onclick="displayInInput(this)">*</button>
+        </div>
+        <div class="row">
+            <button onclick="displayInInput(this)">0</button>
+            <button onclick="displayInInput(this)">.</button>
+            <button onclick="displayInInput(this)">/</button>
+            <button onclick="calculate()">=</button>
+        </div>
+        
+    </div>
+</body>
+</html>
